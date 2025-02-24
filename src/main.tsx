@@ -1,12 +1,13 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
+
 /*
- * Custom modules
+ * Custom Modules
  */
-import router from './routers/routes';
+import router from './routers/routes.tsx';
 /*
- * CSS LINKS
+ * CSS Lins
  */
 import './index.css';
 

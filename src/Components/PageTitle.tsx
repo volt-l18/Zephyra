@@ -1,5 +1,5 @@
 /*
- * Node modules
+ * Node Modules
  */
 import { Helmet } from 'react-helmet';
 

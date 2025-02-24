@@ -1,5 +1,5 @@
 /*
- * Node modules
+ * Node Modules
  */
 import { createBrowserRouter } from 'react-router-dom';
 
@@ -8,7 +8,6 @@ import { createBrowserRouter } from 'react-router-dom';
  */
 import App from '../App';
 import Register from '../pages/Register';
-
 /*
  * Router
  */
