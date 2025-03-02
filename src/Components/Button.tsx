@@ -7,6 +7,7 @@ interface ButtonProps {
   color?: string;
   children: React.ReactNode;
   type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
 }
 
 const Button = ({
@@ -15,12 +16,14 @@ const Button = ({
   color = 'primary',
   children,
   type = 'button',
+  disabled = false,
   ...rest
 }: ButtonProps) => {
   return (
     <button
       className={`btn ${variant} ${color} ${classes}`}
       type={type}
+      disabled={disabled}
       {...rest}
     >
       {children}
