@@ -123,5 +123,21 @@
     > .state-layer {
     @apply opacity-[0.1];
   }
+  /**
+   * Link
+   */
+  .link {
+    @apply transition-colors duration-short3 ease-standard hover:text-light-primary hover:dark:text-dark-primary hover:underline;
+  }
 }
-/* 1:01:49 */
+/**
+ * UTILITS
+ */
+@layer utilities {
+  .img-box {
+    @apply bg-light-surfaceContainerHighest dark:bg-dark-surfaceContainerHighest overflow-hidden;
+  }
+  .img-cover {
+    @apply w-full h-full object-cover;
+  }
+}

@@ -23,7 +23,7 @@ const Register = () => {
         <div className='flex flex-col p-4'>
           <Link
             to='/'
-            className='max-w-max mx-auto lg:mx-0'
+            className='max-w-max mb-auto mx-auto lg:mx-0'
           >
             <img
               src={logoLight}
@@ -75,19 +75,29 @@ const Register = () => {
               />
               <Button type='submit'>Create Account</Button>
             </Form>
-            <p className=''>
-              Already have an account? <Link to='/login'>Login</Link>
+            <p className='text-bodyMedium text-light-onSurfaceVariant dark:text-dark-onSurfaceVariant text-center mt-4'>
+              Already have an account?{' '}
+              <Link
+                to='/login'
+                className='link inline-block ms-1 text-light-onSurface dark:text-dark-onSurface '
+              >
+                Login
+              </Link>
             </p>
           </div>
-          <p className=''>&copy; 2025 Zephyra. All rights reserved.</p>
+          <p className='mt-auto mx-auto text-light-onSurfaceVariant dark:text-dark-onSurfaceVariant text-bodyMedium lg:mx-0'>
+            &copy; 2025 Zephyra. All rights reserved.
+          </p>
         </div>
-        <div className=''>
+        <div className='hidden img-box lg:block lg:relative lg:rounded-large'>
           <img
             src={banner}
             alt=''
             className='img-cover'
           />
-          <p className=''>SuperCharge your ideas with Zephyra</p>
+          <p className='absolute bottom-10 left-12 right-12 z-10 text-displayLarge font-semibold leading-tight text-right text-light-onSurface drop-shadow-sm 2xl:text-[72]'>
+            Chat with Zephyra to SuperCharge your ideas.
+          </p>
         </div>
       </div>
     </>
